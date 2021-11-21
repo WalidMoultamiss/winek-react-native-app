@@ -3,7 +3,9 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext"
+    ],
     "allowJs": true,
     "jsx": "react-native",
     "noEmit": true,
@@ -14,12 +16,29 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/lib/*": ["lib/*"],
-      "@/assets/*": ["assets/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/screens/*": ["screens/*"]
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/assets/*": [
+        "assets/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
+      ],
+      "@/screens/*": [
+        "screens/*"
+      ],
+      "@/src/*": [
+        "src/*"
+      ]
     }
   },
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+  ]
 }
