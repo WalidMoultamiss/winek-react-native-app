@@ -8,6 +8,7 @@ import { StackParamList } from "StackNavigator";
 type HomeScreenProp = NativeStackNavigationProp<StackParamList, "Home">;
 export const HomeScreen: FC = () => {
   const navigation = useNavigation<HomeScreenProp>();
+
   return (
     <View style={tw("flex-1 justify-center items-center bg-white")}>
       <Text style={tw("font-bold text-4xl ")}>Welcome to</Text>
