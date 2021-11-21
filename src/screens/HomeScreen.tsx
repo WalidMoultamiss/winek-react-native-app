@@ -3,7 +3,7 @@ import { useNavigation } from "@react-navigation/core";
 import { View, Text } from "react-native";
 import tw from "tailwind-rn";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { StackParamList } from "StackNavigator";
+import { StackParamList } from "@/src/navigation/StackNavigator";
 
 type HomeScreenProp = NativeStackNavigationProp<StackParamList, "Home">;
 export const HomeScreen: FC = () => {
