@@ -1,1 +1,2 @@
 ﻿# winek-react-native-app 
+ 
