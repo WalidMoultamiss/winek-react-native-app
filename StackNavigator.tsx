@@ -11,11 +11,7 @@ const Stack = createNativeStackNavigator<StackParamList>();
 const StackNavigator: FC = () => {
   return (
     <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ headerShown: false }}
-      />
+      <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 };

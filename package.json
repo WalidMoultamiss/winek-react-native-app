@@ -7,12 +7,20 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "check-types": "tsc --pretty --noEmit",
+    "lint": "eslint . --ext ts --ext tsx --ext js",
+    "prettier": "prettier --write .",
+    "check-format": "prettier --check .",
+    "test": "yarn run prettier && yarn run check-format && yarn run lint && yarn run check-types "
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
     "@reduxjs/toolkit": "^1.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint-plugin-react": "^7.27.1",
     "expo": "~43.0.2",
     "expo-status-bar": "~1.1.0",
     "firebase": "^9.5.0",
@@ -31,6 +39,10 @@
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
     "@types/react-redux": "^7.1.20",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
     "typescript": "~4.3.5"
   },
   "private": true

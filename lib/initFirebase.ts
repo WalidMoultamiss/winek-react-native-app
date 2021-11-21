@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 
 // Optionally import the services that you want to use
 //import {...} from "firebase/auth";
@@ -8,7 +8,6 @@ import { initializeApp } from 'firebase/app';
 //import {...} from "firebase/storage";
 
 // Initialize Firebase
-const firebaseConfig = {
-};
+const firebaseConfig = {};
 
 initializeApp(firebaseConfig);

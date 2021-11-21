@@ -1,32 +1,32 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import type { AppState } from '@/src/app/store'
+import type { AppState } from "@/src/app/store";
 
 export interface UserState {
-  user: null | any,
-  status: 'idle' | 'loading' | 'failed'
+  user: null | any;
+  status: "idle" | "loading" | "failed";
 }
 
 const initialState: UserState = {
   user: null,
-  status: 'idle',
-}
+  status: "idle",
+};
 
 export const userSlice = createSlice({
-  name: 'user',
+  name: "user",
   initialState,
   reducers: {
     logout: (state) => {
-      state.user = null
+      state.user = null;
     },
     setUser: (state, action: PayloadAction<number>) => {
-      state.user += action.payload
+      state.user += action.payload;
     },
   },
-})
+});
 
-export const { logout, setUser } = userSlice.actions
+export const { logout, setUser } = userSlice.actions;
 
-export const selectCount = (state: AppState) => state.user
+export const selectCount = (state: AppState) => state.user;
 
-export default userSlice.reducer
+export default userSlice.reducer;
