@@ -11,16 +11,7 @@
     "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "baseUrl": "./",
-    "paths": {
-      "@/components/*": ["components/*"],
-      "@/lib/*": ["lib/*"],
-      "@/assets/*": ["assets/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/screens/*": ["screens/*"],
-      "@/src/*": ["src/*"]
-    }
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "babel.config.js", "metro.config.js"]
 }

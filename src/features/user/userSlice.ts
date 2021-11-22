@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import type { AppState } from "@/src/store/store";
+import type { AppState } from "../../store/store";
 
 export interface UserState {
   user: null | any;

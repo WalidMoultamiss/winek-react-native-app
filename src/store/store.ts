@@ -1,6 +1,6 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 
-import userSlice from "@/src/features/user/userSlice";
+import userSlice from "../features/user/userSlice";
 
 export function makeStore() {
   return configureStore({
